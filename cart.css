@@ -1,0 +1,188 @@
+.cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: -450px;
+    width: 400px;
+    height: 100%;
+    background: white;
+    transition: 0.4s;
+    z-index: 1000;
+}
+
+.cart-sidebar iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.cart-sidebar.active {
+    right: 0;
+}
+
+.close-cart {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+/* cart page  */
+/* =========================
+   CART SIDEBAR
+========================= */
+
+.cart-sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: white;
+    z-index: 1000;
+    overflow-y: auto;
+    transition: 0.4s;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.2);
+}
+
+/* Cart Header */
+
+.cart-header {
+    display: flex;
+    /* it manage the space It pushes the first item to the left and the last item to the right.*/
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px;
+    background-color: #954b74;
+    color: white;
+}
+
+.cart-header h2 {
+    margin: 0;
+}
+
+.close-cart {
+    font-size: 35px;
+    cursor: pointer;
+}
+
+
+/* Cart Items */
+
+.cart-items {
+    padding: 15px;
+}
+
+.cart-item {
+    display: flex;
+    /* flex start align item at the top as flex direction is top to bottom so we need on top so flex-start */
+    align-items: flex-start;
+    gap: 12px;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.cart-item-details {
+    flex: 1;
+}
+
+.cart-item-details h4 {
+    /* margin: top, right and left, bottom */
+    margin: 0 0 5px;
+    font-size: 15px;
+}
+
+.cart-item-details p {
+    margin: 4px 0;
+    font-size: 14px;
+}
+
+
+/* Quantity */
+
+.qty-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.qty-box button {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #954b74;
+    background: #631683;
+    cursor: pointer;
+    color: white;
+}
+
+.qty-box span {
+    font-weight: bold;
+}
+
+
+/* Remove button */
+
+.remove-item {
+    border: none;
+    background: none;
+    color: #954b74;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+/* Cart Bottom */
+
+.cart-bottom {
+    /* if we have more product and we need to scroll the bottom part will remian on same place */
+    position: sticky;
+    bottom: 0;
+    background: white;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.cart-total {
+    display: flex;
+    /* this will manage the space according to container make left part to left side and right to right side */
+    justify-content: space-between;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    background-color: #954b74;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.checkout-btn:hover {
+    background-color: #713657;
+}
+
+
+/* Overlay */
+
+.cart-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+}
+

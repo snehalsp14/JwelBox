@@ -1,0 +1,386 @@
+/* /earning page heding part price range */
+.earring-filter {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-left: 22px;
+    margin-top: 22px;
+}
+
+.earring-filter h2 {
+    margin: 0;
+    font-size: 28px;
+    white-space: nowrap;
+}
+
+/* Vertical dividing line */
+.vertical-line {
+    width: 1px;
+    height: 50px;
+    background-color: #ddd;
+}
+
+/* Buttons stay side by side */
+.filter-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.filter-pill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px 18px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.plus {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #fff0f1;
+    color: #9b1c24;
+    font-size: 22px;
+}
+/* Popup Overlay */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+}
+
+/* Popup Box */
+.offer-popup {
+    width: 400px;
+    background: white;
+    padding: 35px;
+    text-align: center;
+    border-radius: 15px;
+
+    position: relative;
+
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+
+    animation: popup 0.5s ease;
+}
+
+/* Popup Animation */
+@keyframes popup {
+
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Close Button */
+/* position: absolute allows you to place the element at a specific location inside its positioned parent. here offer popup is parent position */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    border: none;
+    background: none;
+
+    font-size: 28px;
+    cursor: pointer;
+
+    color: #555;
+}
+
+/* Diamond Icon */
+.offer-icon {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+/* Heading */
+.offer-popup h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Discount */
+.offer-popup h1 {
+    font-size: 45px;
+    margin: 15px 0;
+
+    color: #b8860b;
+}
+
+/* Coupon */
+.coupon {
+    background: #f5f0df;
+    padding: 12px;
+    margin: 20px 0;
+
+    border: 1px dashed #b8860b;
+
+    font-size: 16px;
+}
+
+/* Shop Button */
+.shop-btn {
+    display: inline-block;
+
+    background: #111;
+    color: white;
+
+    padding: 12px 25px;
+
+    text-decoration: none;
+
+    border-radius: 25px;
+
+    transition: 0.3s;
+}
+
+.shop-btn:hover {
+    background: #b8860b;
+}
+
+/* Limited Offer */
+.limited {
+    margin-top: 18px;
+    font-size: 13px;
+    color: #888;
+}
+
+.category-icons{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    overflow: auto;
+    background: #ffffff;
+    justify-content: center;
+}
+.icon-box{
+    min-width: 160px;
+    height: 55px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s; /*change happen smoothly over 0.3 seconds */
+    border: 1px solid #954b74;
+    border-radius: 40px;
+    /* display fles will make side by side align item make it center and justify is used to make text center */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background:linear-gradient(to right,#fdab7a,#954b74, #3e1e71,#fdab7a);
+}
+.icon-box p{
+    margin: 0;
+    font-size: 14px;
+    color: #fff;
+}
+
+
+
+.icon-box:hover {
+    transform: translateY(-2px);/* move the element 2 ox upward as giving minus*/
+}
+
+
+/* .image-hover {
+    position: relative;
+    width: 100%;
+    height: 280px;
+}
+
+.image-hover img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+} */
+
+/* .image-hover .hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-hover:hover .hover-image {
+    opacity: 1;
+} */
+.earing-divider{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+
+}
+.earing-divider::before,
+.earing-divider::after {
+    /* content creates an empty element. and before and after is left and right line*/
+    content: "";
+    height: 1px;
+    /* flex: 1 tells the line:Take up the available remaining space. as divider have display fles eg The container might be 1000px wide.
+        Because both boxes have flex: 1, the available space is divided equally: 
+        |---------- A ----------|---------- B ----------|
+        500px                 500px
+        */
+    flex: 1;
+    background: linear-gradient(to right, transparent, #c9a227);
+}
+
+.earing-divider::after {
+    background: linear-gradient(to left, transparent, #c9a227);
+}
+
+.earing-divider span {
+    margin: 0 18px;
+    color: #c9a227;
+    font-size: 20px;
+}
+/* menu conatiner */
+.menu-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.card{
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px #de7878;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    box-sizing: border-box;
+    position: relative; overflow: hidden;
+}
+.card img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+.card button{
+
+    background: #954b74;
+    color: white;
+    border:none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: auto;
+}
+.card button:hover{
+    background: darkred;
+}
+
+
+/* Main image */
+.card > img:first-child {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+/* Second image */
+.card .hover-image {
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+
+    width: calc(100% - 30px);
+    height: 280px;
+
+    object-fit: cover;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Change image when mouse is over the image area */
+.card:hover .hover-image {
+    opacity: 1;
+}
+
+
+/* Add to Cart */
+.card button {
+    background: #954b74;
+    color: white;
+    border: none;
+
+    padding: 6px 12px;
+    border-radius: 5px;
+
+    cursor: pointer;
+    margin-top: auto;
+}
+
+.card button:hover {
+    background: darkred;
+}
+
+
+/* Black transparent overlay */
+.gold-details {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.70);/*0.7 is opacity for black background*/
+    color: white;
+    display: flex;
+    flex-direction: column; /* Arranges the content vertically, from top to bottom.*/
+    justify-content: center;/* centers vertically */
+    align-items: center;  /* center horizontally */
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    z-index: 10;/* instantle pop the invisible overlay gold details */
+}
+
+
+/* Show details when hovering ANYWHERE on card */
+.card:hover .gold-details {
+    opacity: 1;
+}
+
+
+.gold-details h3,
+.gold-details h4 {
+    color: #ffd700;
+    margin: 8px 0;
+}
+
+.gold-details p {
+    color: white;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+

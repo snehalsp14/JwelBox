@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="earing.css">
+
+    <script src="https://kit.fontawesome.com/8d66df2e6f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script>
+
+function closePopup() {
+    document.getElementById("offerPopup").style.display = "none";
+}
+
+</script>
+<script>
+
+function openCart() {
+    document.getElementById("cartSidebar").style.width = "400px";
+    document.getElementById("cartOverlay").style.display = "block";
+}
+
+function closeCart() {
+    document.getElementById("cartSidebar").style.width = "0";
+    document.getElementById("cartOverlay").style.display = "none";
+}
+
+</script>
+     <!-- header start -->
+    <header>
+        <img src="images/logo2.png" alt="" width="100px" height="70px" style="padding: 5px;">
+    <nav>
+         <a href="index.html">Home</a>
+        <div class="dropdown">
+            <a href="menu.html" style="color: white;">All Jewellery ▾</a>
+
+            <div class="dropdown-menu">
+                <a href="earrings.html">Earrings</a>
+                <a href="necklace.html">Necklace</a>
+                <a href="bangals.html">Bangals</a>
+            </div>
+        </div>
+        <a href="newArrival.html">New Arrival</a>
+        <a href="aboutUs.html">About Us</a>
+        <a href="javascript:void(0)" onclick="openCart()">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </a>        
+        <a href="login.html"><i class="fa-solid fa-right-to-bracket"></i>LogOut</a>
+
+    </nav>
+    </header>
+    <!-- header End -->
+     <!-- Cart Sidebar Start -->
+    <div id="cartSidebar" class="cart-sidebar">
+
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <span class="close-cart" onclick="closeCart()">&times;</span>
+        </div>
+
+        <div class="cart-items">
+
+            <!-- Item 1 -->
+            <div class="cart-item">
+
+                <img src="images/earing1.jpg" alt="Earrings">
+
+                <div class="cart-item-details">
+                    <h4>Gemstone Jewellery</h4>
+                    <p>Antique Earrings</p>
+                    <p>₹2,67,440</p>
+
+                    <div class="qty-box">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                </div>
+
+                <button class="remove-item">✖</button>
+
+            </div>
+
+
+            <!-- Item 2 -->
+            <div class="cart-item">
+
+                <img src="images/bangal1.jpg" alt="Bangal">
+
+                <div class="cart-item-details">
+                    <h4>Gold Traditional Bangal</h4>
+                    <p>Gold Bangal</p>
+                    <p>₹4,80,315</p>
+
+                    <div class="qty-box">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                </div>
+
+                <button class="remove-item">✖</button>
+
+            </div>
+
+
+            <!-- Item 3 -->
+            <div class="cart-item">
+
+                <img src="images/earing3.png" alt="Gold Earring">
+
+                <div class="cart-item-details">
+                    <h4>Gold Jewellery</h4>
+                    <p>Gold Earring</p>
+                    <p>₹6,79,315</p>
+
+                    <div class="qty-box">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                </div>
+
+                <button class="remove-item">✖</button>
+
+            </div>
+
+        </div>
+
+        <!-- Cart Bottom -->
+        <div class="cart-bottom">
+
+            <div class="cart-total">
+                <span>Grand Total</span>
+                <strong>₹14,27,070</strong>
+            </div>
+
+            <button class="checkout-btn">
+                Proceed to Checkout
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Overlay -->
+    <div id="cartOverlay" class="cart-overlay" onclick="closeCart()"></div>
+     <!-- Offer Popup Start -->
+    <div class="popup-overlay" id="offerPopup">
+        <div class="offer-popup">
+
+            <button class="close-btn" onclick="closePopup()">×</button>
+
+            <div class="offer-icon">
+                💎
+            </div>
+
+            <h2>Something Sparkling Awaits! ✨</h2>
+
+            <p class="offer-text">
+                Add a little sparkle to your style!
+            </p>
+
+            <h1>20% OFF</h1>
+
+            <p>
+                Get <b>20% OFF</b> on your first earring purchase.
+            </p>
+
+            <div class="coupon">
+                Use Code: <strong>JEWEL20</strong>
+            </div>
+
+            <a href="earrings.html" class="shop-btn">
+                Shop Earrings
+            </a>
+
+            <p class="limited">
+                ✨ Limited Time Offer ✨
+            </p>
+
+        </div>
+    </div>
+    <!-- Offer Popup End -->
+
+    <div class="category-icons">
+        <div class="icon-box">
+            <p>All</p>
+        </div>
+        <div class="icon-box">
+            <p>Gold Earings</p>
+        </div>
+        <div class="icon-box">
+            <p>Antique Earrings</p>
+        </div>
+        <div class="icon-box">
+            <p>Yellow Gold Jwellary</p>
+        </div>
+        <div class="icon-box">
+            <p>Square Shape Earrings</p>
+        </div>  
+        <div class="icon-box">
+            <p>Daily Wear</p>
+        </div>  
+    </div>
+
+    <div class="earing-divider">
+            <span>✦</span>
+        </div>
+      <!-- start menu here -->
+      <div class="earring-filter">
+
+        <h2>Earrings</h2>
+
+        <div class="vertical-line"></div>
+
+        <div class="filter-buttons">
+
+            <button class="filter-pill">
+                <span class="plus">+</span>
+                ₹25,000 - ₹50,000
+            </button>
+
+            <button class="filter-pill">
+                <span class="plus">+</span>
+                22K Jwellary
+            </button>
+
+            <button class="filter-pill">
+                <span class="plus">+</span>
+                Gold Sqaure Jewellery
+            </button>
+
+        </div>
+
+    </div>
+     <section>
+        <div class="menu-container">
+            <div class="card">
+                <!-- <img src="images/earing1.jpg" alt=""> -->
+                 <div class="image-hover">
+                    <img src="images/earing1.jpg" alt="">
+                    <img class="hover-image" src="images/earing1Flip.png" alt="">
+                </div>
+                
+                <h3>Gemstone Jewellery yellow (14.220 gram) - STP10133</h3>
+                <p>Antique Earrings</p>
+                <h5>₹2,67,440 Incl. GST</h5>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <!-- <img src="images/earing2.jpg" alt=""> -->
+                  <div class="image-hover">
+                    <img src="images/earing2.jpg" alt="">
+                    <img class="hover-image" src="images/earing2Flip.png" alt="">
+                </div>
+                <h3>Startlit Swings Gold Earrings – 22K Jewellery</h3>
+                <p>Starlit Swings Gold Earrings.</p>
+                <h5>₹1,53,701 Incl. GST</h5>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <!-- <img src="images/earing3.png" alt=""> -->
+                 <div class="image-hover">
+                    <img src="images/earing3.png" alt="">
+                    <img class="hover-image" src="images/earing3Flip.png" alt="">
+                </div>
+                <h3>Gold Jewellery yellow gold (36.170 gram) - STG10124</h3>
+                <p>Gold Earring</p>
+                <h5>₹6,79,315 Incl. GST</h5>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <!-- <img src="images/earing4.jpg" alt=""> -->
+                <div class="image-hover">
+                    <img src="images/earing4.jpg" alt="">
+                    <img class="hover-image" src="images/earing4Flip.png" alt="">
+                </div>
+                <h3>Unique Lightweight Daily Wear Two Gram Gold Earrings</h3>
+                <p>Gold Earrings</p>
+                <h5>₹53,701 Incl. GST</h5>
+                <button>Add to Cart</button>
+            </div>
+             <div class="card">
+                <!-- <img src="images/earing5.jpg" alt=""> -->
+                <div class="image-hover">
+                    <img src="images/earing5.jpg" alt="">
+                    <img class="hover-image" src="images/earing5Flip.png" alt="">
+                </div>
+                <h3>Gemstone Jewellery yellow (14.220 gram) - STP10133</h3>
+                <p>Antique Earrings</p>
+                <h5>₹2,67,440 Incl. GST</h5>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <!-- <img src="images/earing6.jpg" alt=""> -->
+                <div class="image-hover">
+                    <img src="images/earing6.jpg" alt="">
+                    <img class="hover-image" src="images/earing6Flip.png" alt="">
+                </div>
+                <h3>Light Weight Gold Earrings</h3>
+                <p>Gold Earrings </p>
+                <h5>₹2,50,440 Incl. GST</h5>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <!-- <img src="images/earing7.jpg" alt=""> -->
+                <div class="image-hover">
+                    <img src="images/earing7.jpg" alt="">
+                    <img class="hover-image" src="images/earing7Flip.png" alt="">
+                </div>
+                <h3>22K Gold Square Shape Earrings for Girls/Women</h3>
+                <p>Gold Earrings</p>
+                <h5>₹52,499.00</h5>
+                <button>Add to Cart</button>
+            </div>
+             <div class="card">
+                <div class="image-hover">
+                    <img src="images/earing8.jpg" alt="">
+                    <img class="hover-image" src="images/earing8Flip.png" alt="">
+                </div>
+               <h3>Elegant Ruby Bloom Gold Earrings</h3>
+                <p>Designer Diamond Studded Earrings</p>
+                <h5>₹3,12,750 Incl. GST</h5>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                 <div class="image-hover">
+                    <img src="images/earing9.jpg" alt="">
+                    <img class="hover-image" src="images/earing9Flip.png" alt="">
+                </div>
+               <h3>Royal 22K Gold Wedding Earrings</h3>
+                <p>Traditional Bridal Gold Earrings</p>
+                <h5>₹1,85,440 Incl. GST</h5>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                 <div class="image-hover">
+                    <img src="images/earing10.jpg" alt="">
+                    <img class="hover-image" src="images/earing10Flip.png" alt="">
+                </div>
+                <h3>Elegant Floral Gold Drop Earrings</h3>
+                <p>Traditional Flower Design Gold Earrings</p>
+                <h5>₹1,85,440 Incl. GST</h5>
+                <button>Add to Cart</button>
+            </div>
+
+        </div>
+     </section>
+     <footer>
+    <div class="footer-container">
+
+        <div class="footer-box">
+            <h2>Jewel Box</h2>
+            <p>Where Every Jewel Tells a Story.</p>
+            <p>Discover timeless elegance and beautiful jewellery 
+               crafted to make every moment special.</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="aboutUs.html">About Us</a>
+            <a href="earrings.html">Jewellery</a>
+            <a href="newArrival.html">New Arrival</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Contact Us</h3>
+            <p>📍 Mumbai, Maharashtra</p>
+            <p>📞 +91 98765 43210</p>
+            <p>✉️ info@jewelbox.com</p>
+        </div>
+
+        <div class="footer-icon">
+            <h3>Follow Us</h3>
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook" style="height: 20px; width: 20px;margin-right:10px"></i></a>
+            <a href="https://www.instagram.com/?hl=en"><i class="fa-brands fa-instagram" style="height: 20px; width: 20px;margin-right:10px"></i></a>
+            <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp" style="height: 20px; width: 20px;margin-right:10px"></i></a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Jewel Box. All Rights Reserved.</p>
+    </div>
+</footer>
+</body>
+</html>

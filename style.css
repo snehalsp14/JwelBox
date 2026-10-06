@@ -1,0 +1,340 @@
+header{
+     background: linear-gradient(to right, #ffaf7b, #d76d77, #3a1c71);
+      align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    /* padding : top right bottom left */
+    padding: 0px 30px 0px 30px;
+}
+header img{
+    height: 200px;
+    width: 200px;
+}
+header a{
+    color: white;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+footer {
+    background: #111;
+    color: white;
+    padding-top: 50px;
+}
+
+.footer-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-box {
+    width: 25%;
+}
+
+.footer-box h2 {
+    color: #d4af37;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.footer-box h3 {
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.footer-box p {
+    color: #ccc;
+    line-height: 1.7;
+}
+
+.footer-box a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.footer-box a:hover {
+    color: #d4af37;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #444;
+}
+
+.footer-bottom p {
+    color: #aaa;
+}
+
+ .hero{
+        height: 90vh;
+        background: url("images/banner1.jpg") no-repeat center/cover;
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        color: white;
+    }
+.hero-content {
+    margin-top: 450px;
+    text-align: center;
+     position: relative;
+    z-index: 2;
+}
+/* H1 comes first */
+.hero h1 {
+    animation: slideRight 1.2s ease-out;
+}
+
+/* P comes after H1 */
+.hero p {
+    animation: slideRight 1.2s ease-out;
+    animation-delay: 0.8s;
+    animation-fill-mode: backwards;
+}
+@keyframes slideRight {
+    from {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/* Fade the bottom of the image */
+.hero::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 40%;
+
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgba(0, 0, 0, 0.9)
+    );
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown > a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+/* Dropdown box */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+/* Dropdown links */
+.dropdown-menu a {
+    display: block;
+    padding: 12px 15px;
+    color: black;
+    text-decoration: none;
+}
+
+/* Hover effect */
+.dropdown-menu a:hover {
+    background-color: #f5f5f5;
+    color: #d4af37;
+}
+
+/* Show dropdown */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* home page slide show css */
+.jewelry-section {
+min-height: 500px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 50px;
+padding: 60px 8%;
+background-color: #faf7f2;
+}
+
+/* Left side */
+.jewelry-text {
+width: 45%;
+}
+
+.jewelry-text h2 {
+font-size: 42px;
+margin-bottom: 20px;
+}
+
+.jewelry-text p {
+font-size: 18px;
+line-height: 1.7;
+}
+
+.jewelry-text h3 {
+margin-top: 25px;
+font-style: italic;
+}
+
+/* Image slideshow */
+.jewelry-slider {
+width: 45%;
+height: 400px;
+position: relative;
+overflow: hidden;
+}
+
+.jewelry-slider img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+
+position: absolute;
+top: 0;
+left: 0;
+
+animation: slideShow 9s infinite;
+
+}
+/* :nth-child() is a CSS pseudo-class used to select an element based on its position among its parent’s children. */
+/* First image of jwelary slide like that all other */
+.jewelry-slider img:nth-child(1) {
+animation-delay: 0s;
+}
+
+/* Second image */
+.jewelry-slider img:nth-child(2) {
+animation-delay: 3s;
+}
+
+/* Third image */
+.jewelry-slider img:nth-child(3) {
+animation-delay: 6s;
+}
+
+@keyframes slideShow {
+
+0% {
+    opacity: 0;
+}
+
+10% {
+    opacity: 1;
+}
+
+30% {
+    opacity: 1;
+}
+
+40% {
+    opacity: 0;
+}
+
+100% {
+    opacity: 0;
+}
+
+}
+
+ 
+
+/* index page clickable box */
+
+/* Optional Styling */
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin: 50px 0 35px;
+    color: #631683;
+    position: relative;
+}
+
+/* Underline  design */
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 100px; 
+    height: 3px;
+    background: #9e3980;
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+.card-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.box-link {
+  text-decoration: none; /* Removes default underline from text */
+  color: inherit; /* Keeps your original text colors */
+}
+
+.card-type {
+  width: 200px;
+  padding: 20px;
+    background: linear-gradient(225deg, #631683 0.000%, #7f237e 14.286%, #9e3980 28.571%, #bc5588 42.857%, #d57496 57.143%, #e494a8 71.429%, #e7b1be 85.714%, #dec8d6 100.000%);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  /* transition: background 0.3s; */
+  margin-top: 50px;
+  margin-bottom: 50px;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-type h2{
+    text-align: center;
+}
+
+/* Visual feedback on hover */
+.card-type:hover {
+     transform: translateY(-10px);
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgb(117 30 128)
+}
+.earring-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+
+
+
+.footer-icon a{
+ color: whitesmoke;
+}
+
+.footer-icon h3{
+    color: #d4af37;
+}
+

@@ -1,0 +1,118 @@
+/* Main login page */
+
+.login-page {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+/* Logo */
+
+.login-logo {
+    text-align: center;
+}
+
+.login-logo img {
+    width: 230px;
+    height: auto;
+    display: block;
+}
+
+
+/* Login container */
+
+.auth-container {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Login box */
+
+.auth-box {
+    width: 430px;
+    padding: 40px;
+
+    border-radius: 15px;
+
+    background: linear-gradient(
+        135deg,
+        #fa618a,
+        #ffcf65
+    );
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+    text-align: center;
+}
+
+
+.auth-box h2 {
+    margin-bottom: 30px;
+}
+
+
+/* Input */
+
+.auth-box input {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 13px;
+
+    margin-bottom: 20px;
+
+    border: none;
+    border-radius: 6px;
+
+    font-size: 16px;
+}
+
+
+/* Login button */
+
+.auth-box button {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #412071;
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.auth-box button:hover {
+    background: #2d1550;
+}
+
+
+/* Links */
+
+.auth-box a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.auth-box a:hover {
+    text-decoration: underline;
+}
+
+/* end signup */

@@ -1,0 +1,87 @@
+/* Video Section */
+
+.video-section {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    min-height: 500px;
+    height: 100px;
+    padding: 50px;
+    gap: 40px;
+    box-sizing: border-box;
+}
+
+/* Left side */
+.video-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Right side */
+.video-box {
+    flex: 1;
+    height: 500px;
+}
+
+/* Video */
+.video-box video {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Heading */
+.video-text h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+/* Paragraph */
+.video-text p {
+    font-size: 20px;
+    color: #444;
+    line-height: 1.5;
+}
+
+.gold-divider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 50px auto;
+}
+/* 
+LEFT LINE                    RIGHT LINE
+
+transparent → GOLD     GOLD ← transparent
+       \                    /
+        \                  /
+         ────── ✦ ───────
+
+*/
+.gold-divider::before,
+.gold-divider::after {
+    /* content creates an empty element. and before and after is left and right line*/
+    content: "";
+    height: 1px;
+    /* flex: 1 tells the line:Take up the available remaining space. as divider have display fles eg The container might be 1000px wide.
+        Because both boxes have flex: 1, the available space is divided equally: 
+        |---------- A ----------|---------- B ----------|
+        500px                 500px
+        */
+    flex: 1;
+    background: linear-gradient(to right, transparent, #c9a227);
+}
+
+.gold-divider::after {
+    background: linear-gradient(to left, transparent, #c9a227);
+}
+
+.gold-divider span {
+    margin: 0 18px;
+    color: #c9a227;
+    font-size: 20px;
+}

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="bangals.css">
+
+    <script src="https://kit.fontawesome.com/8d66df2e6f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <script>
+
+        function openCart() {
+            document.getElementById("cartSidebar").style.width = "400px";
+            document.getElementById("cartOverlay").style.display = "block";
+        }
+
+        function closeCart() {
+            document.getElementById("cartSidebar").style.width = "0";
+            document.getElementById("cartOverlay").style.display = "none";
+        }
+
+    </script>
+    <!-- header start -->
+    <header>
+        <img src="images/logo2.png" alt="" width="100px" height="70px" style="padding: 5px;">
+        <nav>
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="menu.html" style="color: white;">All Jewellery ▾</a>
+
+                <div class="dropdown-menu">
+                    <a href="earrings.html">Earrings</a>
+                    <a href="necklace.html">Necklace</a>
+                    <a href="bangals.html">Bangals</a>
+                </div>
+            </div>
+            <a href="newArrival.html">New Arrival</a>
+            <a href="aboutUs.html">About Us</a>
+            <a href="javascript:void(0)" onclick="openCart()">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <a href="login.html"><i class="fa-solid fa-right-to-bracket"></i>LogOut</a>
+
+        </nav>
+    </header>
+    <!-- header End -->
+    <!-- Cart Sidebar Start -->
+    <div id="cartSidebar" class="cart-sidebar">
+
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <span class="close-cart" onclick="closeCart()">&times;</span>
+        </div>
+
+        <div class="cart-items">
+
+            <!-- Item 1 -->
+            <div class="cart-item">
+
+                <img src="images/earing1.jpg" alt="Earrings">
+
+                <div class="cart-item-details">
+                    <h4>Gemstone Jewellery</h4>
+                    <p>Antique Earrings</p>
+                    <p>₹2,67,440</p>
+
+                    <div class="qty-box">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                </div>
+
+                <button class="remove-item">✖</button>
+
+            </div>
+
+
+            <!-- Item 2 -->
+            <div class="cart-item">
+
+                <img src="images/bangal1.jpg" alt="Bangal">
+
+                <div class="cart-item-details">
+                    <h4>Gold Traditional Bangal</h4>
+                    <p>Gold Bangal</p>
+                    <p>₹4,80,315</p>
+
+                    <div class="qty-box">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                </div>
+
+                <button class="remove-item">✖</button>
+
+            </div>
+
+
+            <!-- Item 3 -->
+            <div class="cart-item">
+
+                <img src="images/earing3.png" alt="Gold Earring">
+
+                <div class="cart-item-details">
+                    <h4>Gold Jewellery</h4>
+                    <p>Gold Earring</p>
+                    <p>₹6,79,315</p>
+
+                    <div class="qty-box">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                </div>
+
+                <button class="remove-item">✖</button>
+
+            </div>
+
+        </div>
+
+        <!-- Cart Bottom -->
+        <div class="cart-bottom">
+
+            <div class="cart-total">
+                <span>Grand Total</span>
+                <strong>₹14,27,070</strong>
+            </div>
+
+            <button class="checkout-btn">
+                Proceed to Checkout
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Overlay -->
+    <div id="cartOverlay" class="cart-overlay" onclick="closeCart()"></div>
+
+    <!-- start menu here -->
+    <div class="bangals-filter">
+
+        <h2>Bangals</h2>
+
+        <div class="vertical-line"></div>
+
+        <div class="filter-buttons">
+
+            <button class="filter-pill">
+                <span class="plus">+</span>
+                ₹2,50,000 - ₹15,00,000
+            </button>
+
+            <button class="filter-pill">
+                <span class="plus">+</span>
+                22K Jwellary
+            </button>
+
+            <button class="filter-pill">
+                <span class="plus">+</span>
+                Gold Antique Jewellery
+            </button>
+
+            <button class="filter-pill">
+                <span class="plus">+</span>
+                Gold Temple Jewellery
+            </button>
+
+        </div>
+
+    </div>
+    <section>
+        <div class="menu-container">
+            <div class="card">
+
+                <!-- Product Image -->
+                <div class="image-hover">
+
+                    <img src="images/bangalNew1.jpeg" alt="Guinea 22K Gold Bangle">
+
+                    <img class="hover-image" src="images/necklaceImg1Flip.jpeg" alt="Guinea 22K Gold Bangle">
+
+
+                    <!-- Bangle Details -->
+                    <div class="gold-details">
+
+                        <h3>GUINEA 22K GOLD BANGLE</h3>
+
+                        <p>
+                            <strong>Weight:</strong>
+                            65.39 grams
+                        </p>
+
+                        <p>
+                            <strong>Purity:</strong>
+                            22 Karat
+                        </p>
+
+                        <p>
+                            <strong>Gold:</strong>
+                            22K Yellow Gold
+                        </p>
+
+                        <p>
+                            <strong>Design:</strong>
+                            Traditional
+                        </p>
+
+                        <p>
+                            <strong>Occasion:</strong>
+                            Wedding & Festive Wear
+                        </p>
+
+                        <p>
+                            <strong>Gender:</strong>
+                            Women
+                        </p>
+
+                        <p>
+                            <strong>Certification:</strong>
+                            BIS Hallmarked
+                        </p>
+
+                        <h4>₹1,103,221.00</h4>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Product Name -->
+                <h3>GUINEA 22K GOLD BANGLE</h3>
+
+                <!-- Weight -->
+                <p>Weight: 65.39 g</p>
+
+                <!-- Price -->
+                <h5>₹1,103,221.00</h5>
+
+
+                <!-- Bangle Size -->
+                <div class="size-option">
+
+                    <label>Select Size:</label>
+
+                    <div class="size-boxes">
+
+                        <button type="button" class="size-box">2.2</button>
+                        <button type="button" class="size-box">2.4</button>
+                        <button type="button" class="size-box">2.6</button>
+                        <button type="button" class="size-box">2.8</button>
+                        <button type="button" class="size-box">2.10</button>
+                        <button type="button" class="size-box">2.12</button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Add to Cart -->
+                <button>Add to Cart</button>
+
+            </div>
+
+            <div class="card">
+
+                <div class="image-hover">
+
+                    <!-- Main Image -->
+                    <img src="images/necklace2.jpeg" alt="Gold Necklace">
+
+                    <!-- Hover Image -->
+                    <img class="hover-image" src="images/necklace2flip.jpeg" alt="Gold Necklace">
+
+                    <!-- Product Details on Image Hover -->
+                    <div class="gold-details">
+
+                        <h3>Product Details</h3>
+
+                        <p>
+                            <strong>Product:</strong>
+                            22K Gold Necklace
+                        </p>
+
+                        <p>
+                            <strong>Weight:</strong>
+                            28.79 grams
+                        </p>
+
+                        <p>
+                            <strong>Purity:</strong>
+                            22 Karat
+                        </p>
+
+                        <p>
+                            <strong>Design:</strong>
+                            Rawaurum Collar Necklace
+                        </p>
+
+                        <h4>₹5,22,628</h4>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Normal Product Information -->
+
+                <h3>Necklace In 22Kt Yellow Gold</h3>
+
+                <p>The Rawaurum Collar Necklace.</p>
+
+                <h5>₹5,22,628</h5>
+
+                <button>Add to Cart</button>
+
+            </div>
+            <div class="card">
+                <!-- <img src="images/earing3.png" alt=""> -->
+                <div class="image-hover">
+                    <img src="images/necklace3.jpeg" alt="">
+                    <img class="hover-image" src="images/necklace3Flip.png" alt="">
+                </div>
+                <div class="gold-details">
+                    <h3>Temple Gold Necklace</h3>
+                    <p>Weight: Not specified</p>
+                    <p>Purity: Not specified</p>
+                    <p>Design: Antique Temple Gold</p>
+                    <h4>₹6,50,315</h4>
+                </div>
+                <h3>Temple gold necklace</h3>
+                <p>antique gold</p>
+                <h5>₹6,50,315</h5>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <!-- <img src="images/earing4.jpg" alt=""> -->
+                <div class="image-hover">
+                    <img src="images/necklace4.jpg" alt="">
+                    <img class="hover-image" src="images/necklace4Flip.png" alt="">
+                </div>
+                <div class="gold-details">
+                    <h3>Unique Gold Necklace</h3>
+                    <p>Weight: Not specified</p>
+                    <p>Purity: Not specified</p>
+                    <p>Design: Unique Gold Necklace</p>
+                    <h4>₹5,30,701 Incl. GST</h4>
+                </div>
+                <h3>Unique Gold Necklace</h3>
+                <p>Gold Necklace</p>
+                <h5>₹5,30,701 Incl. GST</h5>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <!-- <img src="images/earing5.jpg" alt=""> -->
+                <div class="image-hover">
+                    <img src="images/necklace5.jpg" alt="">
+                    <img class="hover-image" src="images/necklace5Flip.png" alt="">
+                </div>
+                <div class="gold-details">
+                    <h3>Customized Gold Necklace Set</h3>
+                    <p>Weight: Not specified</p>
+                    <p>Purity: Not specified</p>
+                    <p>Design: Elegant Modern Design</p>
+                    <h4>₹4,67,440 Incl. GST</h4>
+                </div>
+
+                <h3>Gold Necklace Set-Customized Size, Elegant Design</h3>
+                <p>Attractive and fashionable necklace set</p>
+                <h5>₹4,67,440 Incl. GST</h5>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <!-- <img src="images/earing6.jpg" alt=""> -->
+                <div class="image-hover">
+                    <img src="images/necklace6.jpg" alt="">
+                    <img class="hover-image" src="images/necklace6Flip.png" alt="">
+                </div>
+                <div class="gold-details">
+                    <h3>Designer Golden Necklace</h3>
+                    <p>Weight: Not specified</p>
+                    <p>Purity: Not specified</p>
+                    <p>Design: Wedding Designer Style</p>
+                    <h4>₹4,50,440 Incl. GST</h4>
+                </div>
+                <h3>Wedding Attractive Designer Stylish Golden Necklaces</h3>
+                <p>Golden Necklace </p>
+                <h5>₹4,50,440 Incl. GST</h5>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <!-- <img src="images/earing7.jpg" alt=""> -->
+                <div class="image-hover">
+                    <img src="images/necklace7.jpg" alt="">
+                    <img class="hover-image" src="images/necklace7Flip.png" alt="">
+                </div>
+                <div class="gold-details">
+                    <h3>Exclusive Gold Necklace</h3>
+                    <p>Weight: Not specified</p>
+                    <p>Purity: Not specified</p>
+                    <p>Design: Antique Design</p>
+                    <h4>₹8,20,499.00</h4>
+                </div>
+                <h3>Exclusive Gold Necklace For Women</h3>
+                <p>Antique Design</p>
+                <h4>₹8,20,499.00</h4>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <div class="image-hover">
+                    <img src="images/necklace8.jpg" alt="">
+                    <img class="hover-image" src="images/necklace8Flip.jpg" alt="">
+                </div>
+                <div class="gold-details">
+                    <h3>Gold Necklace</h3>
+                    <p>Weight: Not specified</p>
+                    <p>Purity: Not specified</p>
+                    <p>Design: Antique Traditional Design</p>
+                    <h4>₹4,98,958</h4>
+                </div>
+                <h3>Gold Necklace</h3>
+                <p>Antique Design</p>
+                <h4>₹4,98,958</h4>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <div class="image-hover">
+                    <img src="images/necklace9.jpg" alt="">
+                    <img class="hover-image" src="images/necklace9Flip.jpg" alt="">
+                </div>
+                <div class="gold-details">
+                    <h3>Royal Gold Wedding Necklace</h3>
+                    <p>Weight: Not specified</p>
+                    <p>Purity: Not specified</p>
+                    <p>Design: Traditional Bridal Design</p>
+                    <h4>₹12,19,983</h4>
+                </div>
+                <h3>Royal Gold Wedding Necklace</h3>
+                <p>Traditional Bridal Gold Necklace</p>
+                <h5>₹12,19,983</h5>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <div class="image-hover">
+                    <img src="images/necklace10.jpg" alt="">
+                    <img class="hover-image" src="images/necklace10Flip.jpg" alt="">
+                </div>
+                <div class="gold-details">
+                    <h3>Elegant Gold Necklace</h3>
+                    <p>Weight: Not specified</p>
+                    <p>Purity: Not specified</p>
+                    <p>Design: Traditional Flower Design</p>
+                    <h4>₹4,94,491</h4>
+                </div>
+                <h3>Elegant Gold necklace</h3>
+                <p>Traditional Flower Design Gold Necklace</p>
+                <h4>₹4,94,491</h4>
+                <button>Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-box">
+                <h2>Jewel Box</h2>
+                <p>Where Every Jewel Tells a Story.</p>
+                <p>Discover timeless elegance and beautiful jewellery
+                    crafted to make every moment special.</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="aboutUs.html">About Us</a>
+                <a href="earrings.html">Jewellery</a>
+                <a href="newArrival.html">New Arrival</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contact Us</h3>
+                <p>📍 Mumbai, Maharashtra</p>
+                <p>📞 +91 98765 43210</p>
+                <p>✉️ info@jewelbox.com</p>
+            </div>
+
+            <div class="footer-icon">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"
+                        style="height: 20px; width: 20px;margin-right:10px"></i></a>
+                <a href="https://www.instagram.com/?hl=en"><i class="fa-brands fa-instagram"
+                        style="height: 20px; width: 20px;margin-right:10px"></i></a>
+                <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"
+                        style="height: 20px; width: 20px;margin-right:10px"></i></a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Jewel Box. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

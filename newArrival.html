@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="newArrival.css">
+
+    <script src="https://kit.fontawesome.com/8d66df2e6f.js" crossorigin="anonymous"></script>
+</head>
+<script>
+
+function openCart() {
+    document.getElementById("cartSidebar").style.width = "400px";
+    document.getElementById("cartOverlay").style.display = "block";
+}
+
+function closeCart() {
+    document.getElementById("cartSidebar").style.width = "0";
+    document.getElementById("cartOverlay").style.display = "none";
+}
+
+</script>
+<body>
+      <!-- header start -->
+    <header>
+        <img src="images/logo2.png" alt="" width="100px" height="70px" style="padding: 5px;">
+    <nav>
+         <a href="index.html">Home</a>
+        <div class="dropdown">
+            <a href="menu.html" style="color: white;">All Jewellery ▾</a>
+
+            <div class="dropdown-menu">
+                <a href="earrings.html">Earrings</a>
+                <a href="necklace.html">Necklace</a>
+                <a href="bangals.html">Bangals</a>
+            </div>
+        </div>
+        <a href="newArrival.html">New Arrivals</a>
+        <a href="aboutUs.html">About Us</a>
+        <a href="javascript:void(0)" onclick="openCart()">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </a>        
+        <a href="login.html"><i class="fa-solid fa-right-to-bracket"></i>LogOut</a>
+
+    </nav>
+    </header>
+     <!-- Cart Sidebar Start -->
+    <div id="cartSidebar" class="cart-sidebar">
+
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <span class="close-cart" onclick="closeCart()">&times;</span>
+        </div>
+
+        <div class="cart-items">
+
+            <!-- Item 1 -->
+            <div class="cart-item">
+
+                <img src="images/earing1.jpg" alt="Earrings">
+
+                <div class="cart-item-details">
+                    <h4>Gemstone Jewellery</h4>
+                    <p>Antique Earrings</p>
+                    <p>₹2,67,440</p>
+
+                    <div class="qty-box">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                </div>
+
+                <button class="remove-item">✖</button>
+
+            </div>
+
+
+            <!-- Item 2 -->
+            <div class="cart-item">
+
+                <img src="images/bangal1.jpg" alt="Bangal">
+
+                <div class="cart-item-details">
+                    <h4>Gold Traditional Bangal</h4>
+                    <p>Gold Bangal</p>
+                    <p>₹4,80,315</p>
+
+                    <div class="qty-box">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                </div>
+
+                <button class="remove-item">✖</button>
+
+            </div>
+
+
+            <!-- Item 3 -->
+            <div class="cart-item">
+
+                <img src="images/earing3.png" alt="Gold Earring">
+
+                <div class="cart-item-details">
+                    <h4>Gold Jewellery</h4>
+                    <p>Gold Earring</p>
+                    <p>₹6,79,315</p>
+
+                    <div class="qty-box">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                </div>
+
+                <button class="remove-item">✖</button>
+
+            </div>
+
+        </div>
+
+        <!-- Cart Bottom -->
+        <div class="cart-bottom">
+
+            <div class="cart-total">
+                <span>Grand Total</span>
+                <strong>₹14,27,070</strong>
+            </div>
+
+            <button class="checkout-btn">
+                Proceed to Checkout
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Overlay -->
+    <div id="cartOverlay" class="cart-overlay" onclick="closeCart()"></div>
+    <!-- header End -->
+     <!-- start Video Section -->
+       <section class="video-section">
+        <!-- left side -->
+         <div class="video-text">
+         <h2>Elegance in Every Necklace</h2>
+
+        <p>
+            Discover timeless beauty with our stunning necklaces, designed to add a touch of elegance and sparkle to every special moment.
+        </p>
+
+        </div>
+        <!-- end left side -->
+         <!-- right side -->
+          <!-- playsinline tells browser to play the video inside webpage insted of automatically opening it in full screen mode -->
+           <div class="video-box">
+            <video  autoplay muted loop playsinline>
+                <source src="media/necklace.mp4" type="video/mp4">
+            </video>
+           </div>
+       </section>
+       <div class="gold-divider">
+            <span>✦</span>
+        </div>
+       <section class="video-section">
+        <!-- left side -->
+         <div class="video-box">
+            <video  autoplay muted loop playsinline>
+                <source src="media/necklace2.mp4" type="video/mp4">
+            </video>
+           </div>
+         <div class="video-text">
+            <h2>Timeless Gold Elegance</h2>
+
+            <p>
+                Adorn yourself with the timeless beauty of traditional gold jewellery,
+                crafted with intricate detailing to celebrate elegance, tradition, and every special moment.
+            </p>
+
+        </div>
+        <!-- end left side -->
+         <!-- right side -->
+          <!-- playsinline tells browser to play the video inside webpage insted of automatically opening it in full screen mode -->
+           
+       </section>
+       <div class="gold-divider">
+            <span>✦</span>
+        </div>
+       <section class="video-section">
+        <!-- left side -->
+         
+         <div class="video-text">
+            <h2>A Little Gold, A Lot of Charm</h2>
+
+            <p>
+                Delicate enough for every day, yet beautiful enough to make every moment feel special.
+            </p>
+
+        </div>
+        <!-- end left side -->
+         <!-- right side -->
+          <div class="video-box">
+            <video  autoplay muted loop playsinline>
+                <source src="media/bracelet1.mp4" type="video/mp4">
+            </video>
+           </div>
+          <!-- playsinline tells browser to play the video inside webpage insted of automatically opening it in full screen mode -->
+           
+       </section>
+
+    <!-- footer section start -->
+<footer>
+    <div class="footer-container">
+
+        <div class="footer-box">
+            <h2>Jewel Box</h2>
+            <p>Where Every Jewel Tells a Story.</p>
+            <p>Discover timeless elegance and beautiful jewellery 
+               crafted to make every moment special.</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="aboutUs.html">About Us</a>
+            <a href="earrings.html">Jewellery</a>
+            <a href="newArrival.html">New Arrival</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Contact Us</h3>
+            <p>📍 Mumbai, Maharashtra</p>
+            <p>📞 +91 98765 43210</p>
+            <p>✉️ info@jewelbox.com</p>
+        </div>
+
+        <div class="footer-icon">
+            <h3>Follow Us</h3>
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook" style="height: 20px; width: 20px;margin-right:10px"></i></a>
+            <a href="https://www.instagram.com/?hl=en"><i class="fa-brands fa-instagram" style="height: 20px; width: 20px;margin-right:10px"></i></a>
+            <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp" style="height: 20px; width: 20px;margin-right:10px"></i></a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Jewel Box. All Rights Reserved.</p>
+    </div>
+</footer>
+    
+</body>
+</html>
