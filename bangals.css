@@ -50,6 +50,8 @@
    MAIN PRODUCT IMAGE
 ========================================= */
 
+
+
 .image-hover > img:first-child {
     position: absolute;
 
@@ -130,8 +132,8 @@
     opacity: 0;
 
     visibility: hidden;
-
-    z-index: 10;
+    /* iomage z index is 1 and gold detail have 10 so it will appear on upside of image */
+    z-index: 10; 
 
     transition: opacity 0.3s ease,
                 visibility 0.3s ease;
@@ -143,7 +145,6 @@
 /* Show details when mouse is over image */
 .image-hover:hover .gold-details {
     opacity: 1;
-
     visibility: visible;
 }
 
@@ -154,9 +155,7 @@
 
 .gold-details h3 {
     color: #ffd700;
-
     font-size: 22px;
-
     margin: 0 0 15px 0;
 }
 
@@ -235,7 +234,8 @@
 
     cursor: pointer;
 
-    margin-top: 10px;
+    /* this keeps add to cart button on bottom of card stick dnt change according to content */
+    margin-top: auto; 
 
     font-size: 15px;
 }
@@ -279,6 +279,10 @@
     gap: 8px;
 
     width: 100%;
+}
+/* show bangal size unavilable */
+.unavailable{
+    text-decoration-line: line-through;
 }
 
 
@@ -387,6 +391,8 @@
     color: #9b1c24;
     font-size: 22px;
 }
+
+
 
 /* =========================================
    RESPONSIVE
